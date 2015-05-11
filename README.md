@@ -1,0 +1,2 @@
+# bin
+roaming ~/ibin/
