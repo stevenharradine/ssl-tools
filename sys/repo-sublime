@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+add-apt-repository ppa:webupd8team/sublime-text-3
+aptitude update
+aptitude install sublime-text-installer

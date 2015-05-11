@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+import re,os,os.path,sys
+if (len(sys.argv) < 3)or("".join(sys.argv).lower().find('--help') > 0):
+        print "Usage: mmv [OPTION] $regex_match $regex_sub"
+        print "  -t:\ttest - ouput all status & error messages but don't commit new filenames"
+else:
+        strFrom = sys.argv[-2]
+        strTo = sys.argv[-1]
+        for ix in os.listdir('./'):
+                if re.search(strFrom,ix):
+                        try:
+                                str = "%s:\t" % ix
+                                if not sys.argv.__contains__('-t'):
+                                        os.rename(ix,re.sub(strFrom,strTo,ix))
+                                str += re.sub(strFrom,strTo,ix)
+                        except Exception,e:
+                                str += "%s" % e.args[1]
+                        print str

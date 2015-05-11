@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+~/bin/ren "_-_" "-"
+~/bin/ren " - " "-"
+~/bin/ren "\.\ " "."
+~/bin/ren " " "."
+~/bin/ren "\'" ""
+~/bin/ren "\," ""
+~/bin/ren "\&" "and"
+~/bin/ren "_" "."
+~/bin/ren A a
+~/bin/ren B b
+~/bin/ren C c
+~/bin/ren D d
+~/bin/ren E e
+~/bin/ren F f
+~/bin/ren G g
+~/bin/ren H h
+~/bin/ren I i
+~/bin/ren J j
+~/bin/ren K k
+~/bin/ren L l
+~/bin/ren M m
+~/bin/ren N n
+~/bin/ren O o
+~/bin/ren P p
+~/bin/ren Q q
+~/bin/ren R r
+~/bin/ren S s
+~/bin/ren T t
+~/bin/ren U u
+~/bin/ren V v
+~/bin/ren W w
+~/bin/ren X x
+~/bin/ren Y y
+~/bin/ren Z z

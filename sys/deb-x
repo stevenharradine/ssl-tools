@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+aptitude install \
+adobe-flashplugin \
+calibre \
+clementine \
+easytag \
+firefox \
+flashplugin-nonfree \
+geeqie \
+gimp \
+gparted \
+gstreamer0.10-plugins-{good,bad,ugly} \
+icedove \
+iceweasel \
+keepass2 \
+rdesktop \
+shutter \
+steam \
+terminator \
+thunderbird \
+tsclient \
+unetbootin \
+vlc \
+xvnc4viewer
+

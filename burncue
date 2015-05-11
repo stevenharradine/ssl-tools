@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "decoding *.flac"
+for herp in *flac; do flac -dfs "$herp"; done
+echo "writing cue"
+cdrdao write --device /dev/sr0 --driver generic-mmc:0x00000010: *.cue
+if [ $? -ne 0 ]
+ then
+ echo "warning: derp detected, attempting de-derp.."
+ sed -i.bak '/INDEX 00/d' *.cue
+ cdrdao write --device /dev/sr0 --driver generic-mmc:0x00000010: *.cue
+ if [ $? -ne 0 ]
+  then
+  echo "critical: extreme derp detected, aborting!"
+  exit 1
+ fi
+fi
+echo "reading CD-TEXT"
+cd-info|grep TITLE
+eject /dev/sr0

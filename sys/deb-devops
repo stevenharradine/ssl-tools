@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+aptitude install \
+docker.io \
+git \
+jq \
+virtualbox \
+vagrant \
+python \
+python-pip \
+ruby \
+ruby-dev
+
+pip install awscli boto
+gem install aws-sdk-core
+
+echo "!!!! http://downloads.getchef.com/chef-dk/ !!!!"
+

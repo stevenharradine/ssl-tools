@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -
+echo "deb http://deb.opera.com/opera/ stable non-free" > /etc/apt/sources.list.d/opera.list
+aptitude update
+aptitude -R install opera
+

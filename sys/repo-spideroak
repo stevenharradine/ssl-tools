@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted" > /etc/apt/sources.list.d/spideroak.list
+aptitude -y update && aptitude install spideroak
+

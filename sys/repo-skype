@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "deb http://archive.canonical.com/ubuntu/ trusty partner" > /etc/apt/sources.list.d/skype.list
+aptitude -y update && aptitude -yd install skype
