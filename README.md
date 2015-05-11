@@ -1,2 +1,4 @@
 # bin
-roaming ~/ibin/
+```
+ ~/bin/
+```
