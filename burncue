@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 echo "decoding *.flac"
 for herp in *flac; do flac -dfs "$herp"; done
 echo "writing cue"
@@ -17,3 +18,4 @@ fi
 echo "reading CD-TEXT"
 cd-info|grep TITLE
 eject /dev/sr0
+
