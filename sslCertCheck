@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+while read DOMAIN
+do
+ echo -n `date --date="$(openssl s_client -connect $DOMAIN:443 < /dev/null 2>/dev/null | openssl x509 -noout -enddate 2>/dev/null | awk -F\= '{print $2}')" --iso-8601`
+ echo " "$DOMAIN
+done < $1
+
