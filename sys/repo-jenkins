@@ -3,4 +3,5 @@
 wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 echo "deb http://pkg.jenkins-ci.org/debian binary/" > /etc/apt/sources.list.d/jenkins-ci.list
 aptitude -y update && aptitude install jenkins
-
+sed -i.bak 's/8080/8888/' /etc/default/jenkins
+service jenkins restart
