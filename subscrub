@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+export mkv=$1
+	mv -v $mkv $mkv.old
+	mkvmerge -o $mkv -v -S $mkv.old
+		if  [ $? != 0 ]
+		then
+			echo some sort of problem with $mkv - restoring to original
+			mv -vf $mkv.old $mkv
+		fi
+	rm -v $mkv.old
