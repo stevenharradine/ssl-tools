@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 aptitude install \
+ansible \
 docker.io \
 git \
 jq \
