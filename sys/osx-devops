@@ -8,8 +8,9 @@ cmake \
 mosh \
 python \
 pygtk \
-ruby
-tmux
+ruby \
+tmux \
+vte
 
 brew install homebrew/dupes/openssh
 brew install libgit2 --with-libssh2
