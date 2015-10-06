@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew install \
+bash-completion \
+cmake \
+mosh \
+python \
+pygtk \
+ruby
+tmux
+
+brew install homebrew/dupes/openssh
+brew install libgit2 --with-libssh2
+
