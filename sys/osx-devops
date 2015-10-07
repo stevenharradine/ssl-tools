@@ -10,7 +10,8 @@ python \
 pygtk \
 ruby \
 tmux \
-vte
+vte \
+watch
 
 brew install homebrew/dupes/openssh
 brew install libgit2 --with-libssh2
