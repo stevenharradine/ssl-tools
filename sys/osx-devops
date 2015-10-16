@@ -3,12 +3,29 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install \
+aggregate \
+ansible \
+apg \
+autossh \
+awscli \
 bash-completion \
+cksfv \
 cmake \
+dos2unix \
+fdupes \
+ipcalc \
+htop \
+imagemagick \
+ipcalc \
 mosh \
+ncftp \
+netcat \
+ngrep \
+nmap \
 python \
 pygtk \
 ruby \
+tcptraceroute \
 tmux \
 vte \
 watch
