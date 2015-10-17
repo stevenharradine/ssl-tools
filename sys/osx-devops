@@ -32,4 +32,4 @@ watch
 
 brew install homebrew/dupes/openssh
 brew install libgit2 --with-libssh2
-
+brew install Caskroom/cask/keepassx
