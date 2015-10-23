@@ -7,6 +7,7 @@ git \
 jq \
 nodejs \
 nodejs-dev \
+npm \
 python \
 python-pip \
 ruby \
