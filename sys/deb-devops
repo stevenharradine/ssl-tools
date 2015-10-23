@@ -5,15 +5,18 @@ ansible \
 docker.io \
 git \
 jq \
-virtualbox \
-vagrant \
+nodejs \
+nodejs-dev \
 python \
 python-pip \
 ruby \
-ruby-dev
+ruby-dev \
+virtualbox \
+vagrant
 
 pip install awscli boto
 gem install aws-sdk-core
+npm install grunt-cli
 
 echo "!!!! http://downloads.getchef.com/chef-dk/ !!!!"
 

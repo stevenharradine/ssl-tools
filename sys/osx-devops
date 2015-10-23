@@ -22,6 +22,7 @@ ncftp \
 netcat \
 ngrep \
 nmap \
+node \
 python \
 pygtk \
 ruby \
@@ -33,3 +34,4 @@ watch
 brew install homebrew/dupes/openssh
 brew install libgit2 --with-libssh2
 brew install Caskroom/cask/keepassx
+npm install -g grunt-cli
